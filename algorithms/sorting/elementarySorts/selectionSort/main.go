@@ -1,8 +1,13 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"github.com/nvhai245/algorithms_in_go/libs"
+	"time"
+)
 
 func selectionSort(a []int) []int {
+	defer libs.TimeTrack(time.Now(), "selectionSort")
 	for i := 0; i < len(a); i++ {
 		min := a[i]
 		k := i
@@ -19,6 +24,7 @@ func selectionSort(a []int) []int {
 }
 
 func main() {
-	a := []int {1, 13, 88, 5, 46, 22, 31, 0, 155, 66, 44, 61, -45, 37, -6, -22}
-	fmt.Println(selectionSort(a))
+	fmt.Println("[UNSORTED]:")
+	fmt.Println(libs.TestIntSlice)
+	fmt.Println(selectionSort(libs.TestIntSlice))
 }
