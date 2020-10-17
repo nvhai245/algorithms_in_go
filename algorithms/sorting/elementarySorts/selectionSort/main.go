@@ -24,7 +24,5 @@ func selectionSort(a []int) []int {
 }
 
 func main() {
-	fmt.Println("[UNSORTED]:")
-	fmt.Println(libs.TestIntSlice)
-	fmt.Println(selectionSort(libs.TestIntSlice))
+	fmt.Println(selectionSort(libs.GenerateSlice(20)))
 }

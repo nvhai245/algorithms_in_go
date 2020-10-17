@@ -49,7 +49,5 @@ func mergeSort(a []int) []int {
 }
 
 func main() {
-	fmt.Println("[UNSORTED]:")
-	fmt.Println(libs.TestIntSlice)
-	fmt.Println(mergeSort(libs.TestIntSlice))
+	fmt.Println(mergeSort(libs.GenerateSlice(50)))
 }

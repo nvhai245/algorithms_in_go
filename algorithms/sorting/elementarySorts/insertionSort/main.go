@@ -19,7 +19,5 @@ func insertionSort(a []int) []int {
 }
 
 func main() {
-	fmt.Println("[UNSORTED]:")
-	fmt.Println(libs.TestIntSlice)
-	fmt.Println(insertionSort(libs.TestIntSlice))
+	fmt.Println(insertionSort(libs.GenerateSlice(50)))
 }

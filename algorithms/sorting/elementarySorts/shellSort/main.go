@@ -26,7 +26,5 @@ func shellSort(a []int) []int {
 }
 
 func main() {
-	fmt.Println("[UNSORTED]:")
-	fmt.Println(libs.TestIntSlice)
-	fmt.Println(shellSort(libs.TestIntSlice))
+	fmt.Println(shellSort(libs.GenerateSlice(20)))
 }
