@@ -25,6 +25,7 @@ func GenerateSlice(size int) []int {
 	return slice
 }
 
+// TimeTrack show the total execution time of a function
 func TimeTrack(start time.Time, name string) {
 	elapsed := time.Since(start)
 	fmt.Println(name, "took", elapsed, ", result: ")
