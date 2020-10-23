@@ -28,12 +28,12 @@ func sort(a []int) {
 	sort(a[left+1:])
 }
 
-func quickSort(a []int) []int {
+func QuickSort(a []int) []int {
 	defer libs.TimeTrack(time.Now(), "quickSort")
 	sort(a)
 	return a
 }
 
 func main() {
-	fmt.Println(quickSort(libs.GenerateSlice(10)))
+	fmt.Println(QuickSort(libs.GenerateSlice(10)))
 }
